@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background: #89C3FF;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+}
+
+.header-left {
+	background: #FFF7E5;
+	padding: 25px 40px;
+	border-bottom-right-radius: 200px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.logo {
+	width: 50px;
+}
+
+.navbar {
+	display: flex;
+	gap: 20px;
+}
+
+.nav-btn {
+	background: #FFF7E5;
+	padding: 12px 30px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.15);
+}
+
+.content {
+	margin: 50px;
+}
+
+.welcome {
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	font-style: italic;
+}
+
+.info-box {
+	background: #FFF7E5;
+	padding: 12px 20px;
+	width: 350px;
+	border-radius: 10px;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.15);
+	margin-bottom: 40px;
+}
+
+.info-box p {
+	font-size: 14px;
+	font-style: italic;
+	opacity: 0.7;
+}
+
+.months {
+	display: flex;
+	gap: 40px;
+	justify-content: flex-start;
+}
+
+.month-card {
+	background: #FFF7E5;
+	width: 260px;
+	padding: 30px 25px;
+	border-radius: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.amount {
+	font-weight: bold;
+}

@@ -1,0 +1,63 @@
+body {
+	background-color: #84C4F6;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+ h2, p {
+    margin: 10px;
+}
+
+.logo{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 240px;
+      left: 491px;
+} 
+
+  .eBill {
+      font-family: 'Poppins', sans-serif;
+      text-align: left;
+      margin-top: 262px;
+      margin-left: 581px;
+      color: #000000;
+      font-weight: bold;
+      font-size: 32px;
+  }
+
+  .tag {
+      font-family: 'Poppins', sans-serif;
+      text-align: left;
+      margin-top: 20px;
+      margin-left: 91px;
+      color: #000000;
+      font-weight: normal;
+      font-size: 20px;
+  }
+
+.button-container {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.btnblack {
+	background: black;
+	color: white;
+	border: none;
+	border-radius: 7px;
+	padding: 12px 20px;
+	cursor: pointer;
+
+}
+.btnwhite {
+	background: white;
+	color: black;
+	border-radius: 7px;
+	padding: 12px 20px;
+	border: 2px solid black;
+	cursor: pointer;
+}
