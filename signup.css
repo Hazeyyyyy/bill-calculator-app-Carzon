@@ -5,90 +5,130 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.splitscreen {
+  display: flex;
+  width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.container {
-  display: flex;
-  width: 85%;
-  max-width: 1200px;
-  height: 600px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.left {
-  width: 100%;
-  background: #FFF8E5;
+.leftside {
+  flex: 1;
+  background-color: #FFF8E5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   text-align: center;
-  border-top-right-radius: 200px;
-  border-bottom-right-radius: 200px;
 }
 
-.left .logo {
-  width: 140px;
-  margin-bottom: 20px;
+.leftside .logo {
+  width: 120px;
+  height: 120px;
 }
 
-.left h1 {
-  font-size: 28px;
+.leftside .eBill {
+  font-size: 32px;
   font-weight: bold;
-  color: #000;
+  color: black;
 }
 
-.right {
-  width: 50%;
-  background: #8BC9FF;
+.rightside {
+  flex: 1;
+  background-color: #84C4F6;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  position: relative;
 }
 
-.signupform {
-  width: 75%;
+.container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.signupform h2 {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.signupform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
 }
 
 .signupform input {
   width: 100%;
-  padding: 14px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
+  padding: 12px 15px;
+  border-radius: 7px;
+  border: 1px solid #CCC;
   font-size: 16px;
+}
+
+.signupform input:focus {
   outline: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: #000;
 }
 
-.signupbtn {
-  display: block;
-  width: 100%;
-  padding: 14px;
-  background: #fff;
-  color: #000;
-  border: 2px solid #000;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
+.btnblack {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 20px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
 }
 
-.signupbtn:hover {
-  background: #f2f2f2;
+.btnblack:hover {
+  opacity: 0.8;
+}
+
+.signuptxt {
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signuptxt a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signuptxt a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+.split-screen {
+  flex-direction: column;
+  }
+
+.leftside, .rightside {
+  flex: none;
+  width: 100%;
+  height: 50vh;
+}
+
+.container {
+  margin: 0 auto;
+}
 }

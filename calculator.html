@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="dashboard.css">
-	<title>Dashboard</title>
+	<link rel="stylesheet" href="calculator.css">
+	<title>Calculator</title>
 </head>
 <body>
 
@@ -23,29 +23,24 @@
 		</div>
 	</div>
 
-	<div class="content">
+	<div class="container">
 
-		<h2 class="welcome">Welcome, User!</h2>
+		<h2 class="title">Electricity Bill Calculator</h2>
 
-		<div class="infobox">
-			<p>Below are the results recorded over the last three months.</p>
-		</div>
+		<div class="calform">
 
-		<div class="months">
-			<div class="card">
-				<p>January</p>
-				<p class="amount">200.00</p>
+			<input type="text" placeholder="Month">
+			<input type="number" placeholder="Power Consumption">
+			<input type="number" placeholder="Cost per kilowatt-hour">
+			<button class="calbtn">Calculate</button>
+
+			<div class="resultbox">
+				<label>Total Bill:</label>
+				<input type="text" readonly>
 			</div>
 
-			<div class="card">
-				<p>February</p>
-				<p class="amount">450.00</p>
-			</div>
+			<button class="savebtn">Save Result</button>
 
-			<div class="card">
-				<p>March</p>
-				<p class="amount">650.00</p>
-			</div>
 		</div>
 
 	</div>

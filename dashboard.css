@@ -2,94 +2,131 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Arial, sans-serif;
+	font-family: "Poppins", "Arial", sans-serif;
 }
 
 body {
-	background: #89C3FF;
+	background: #84C4F6;
 }
 
 .header {
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	padding: 20px 40px;
+	padding: 25px 60px;
+	position: relative;
 }
 
-.header-left {
-	background: #FFF7E5;
-	padding: 25px 40px;
-	border-bottom-right-radius: 200px;
+.hleft {
+	background: #FFF8E5;
+	padding: 35px 55px;
+	border-bottom-right-radius: 220px;
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 170px;
+	width: 520px;
+	z-index: 0;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.12);
 }
 
 .logo {
-	width: 50px;
+	width: 60px;
 }
 
 .navbar {
 	display: flex;
-	gap: 20px;
+	gap: 30px;
+	z-index: 2;
 }
 
-.nav-btn {
-	background: #FFF7E5;
-	padding: 12px 30px;
-	border-radius: 10px;
+.navbtn {
+	background: #FFF8E5;
+	padding: 15px 38px;
+	border-radius: 12px;
 	text-decoration: none;
 	color: black;
-	font-weight: bold;
-	font-size: 16px;
-	box-shadow: 0 4px 5px rgba(0,0,0,0.15);
+	font-weight: 600;
+	font-size: 17px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.18);
+	transition: 0.2s;
+}
+
+.navbtn:hover {
+	opacity: 0.85;
 }
 
 .content {
-	margin: 50px;
+	margin: 190px 80px 60px 80px;
 }
 
 .welcome {
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom: 22px;
 	font-style: italic;
+	color: #06203d;
 }
 
-.info-box {
-	background: #FFF7E5;
-	padding: 12px 20px;
-	width: 350px;
-	border-radius: 10px;
-	box-shadow: 0 4px 5px rgba(0,0,0,0.15);
-	margin-bottom: 40px;
+.infobox {
+	background: #FFF8E5;
+	padding: 16px 25px;
+	width: 420px;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.16);
+	margin-bottom: 55px;
 }
 
-.info-box p {
-	font-size: 14px;
+.infobox p {
+	font-size: 15px;
 	font-style: italic;
-	opacity: 0.7;
+	opacity: 0.75;
 }
 
 .months {
 	display: flex;
-	gap: 40px;
+	gap: 60px;
 	justify-content: flex-start;
 }
 
-.month-card {
-	background: #FFF7E5;
-	width: 260px;
-	padding: 30px 25px;
-	border-radius: 12px;
+.card {
+	background: #FFF8E5;
+	width: 300px;
+	padding: 40px 30px;
+	border-radius: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 18px;
-	box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+	font-size: 20px;
+	box-shadow: 0 6px 10px rgba(0,0,0,0.22);
 }
 
 .amount {
-	font-weight: bold;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+.header {
+	flex-direction: column;
+	padding: 20px;
+}
+
+.navbar {
+	margin-top: 190px;
+}
+
+.content {
+	margin: 250px 25px 20px 25px;
+}
+
+.months {
+	flex-direction: column;
+	gap: 25px;
+}
 }

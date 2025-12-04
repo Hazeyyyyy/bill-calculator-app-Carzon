@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", "Arial", sans-serif;
+}
+
+body {
+	background: #84C4F6;
+}
+
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 25px 60px;
+	position: relative;
+}
+
+.hleft {
+	background: #FFF8E5;
+	padding: 35px 55px;
+	border-bottom-right-radius: 220px;
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 170px;
+	width: 520px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+.logo {
+	width: 60px;
+}
+
+.navbar {
+	display: flex;
+	gap: 30px;
+}
+
+.navbtn {
+	background: #FFF8E5;
+	padding: 15px 38px;
+	border-radius: 12px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 600;
+	font-size: 17px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.18);
+	transition: 0.2s;
+}
+
+.navbtn:hover {
+	opacity: 0.85;
+}
+
+.container {
+	background: #FFF8E5;
+	width: 75%;
+	margin: 200px auto 100px auto;
+	padding: 50px 40px;
+	border-radius: 15px;
+	box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+	text-align: center;
+}
+
+.title {
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.proficon img {
+	width: 120px;
+	margin-bottom: 35px;
+	filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+.formbox {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 0 auto;
+	gap: 20px;
+}
+
+.input {
+	padding: 14px 18px;
+	border-radius: 8px;
+	border: none;
+	background: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+	font-size: 15px;
+}
+
+.btnrow {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	margin-top: 40px;
+}
+
+.changebtn,
+.logoutbtn {
+	padding: 14px 32px;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+	transition: 0.25s;
+}
+
+.changebtn {
+	background: #FFFFFF;
+	color: black;
+}
+
+.logoutbtn {
+	background: black;
+	color: white;
+}
+
+.changebtn:hover,
+.logoutbtn:hover {
+	transform: translateY(-2px);
+	opacity: 0.9;
+}

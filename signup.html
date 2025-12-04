@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="signup.css" />
-	<title>Sign Up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="signup.css">
+	<title>SignUp</title>
 </head>
 <body>
 
-	<div class="container">
+	<div class="splitscreen">
 
-	<div class="left">
-		<img src="logo.png" class="logo" alt="Logo" />
-		<h1>E-Bill Calculator</h1>
-	</div>
-
-	<div class="right">
-		<form class="signupform">
-			<h2>Sign Up</h2>
-
-			<input type="text" name="name" placeholder="Name">
-			<input type="text" name="phone" placeholder="Phone">
-			<input type="text" name="address" placeholder="Address">
-			<input type="email" name="email" placeholder="Email">
-			<input type="password" name="password" placeholder="Password">
-			<input type="password" name="confirm_password" placeholder="Confirm Password">
-
-			<a class="signupbtn" href="dashboard.html">Sign Up</a>
-		</form>
+		<div class="leftside">
+			<img src="logo.png" class="logo">
+			<h1 class="eBill">E-Bill Calculator</h1>
 		</div>
 
+		<div class="rightside">
+			<div class="container">
+
+				<h2 class="signup">Sign Up</h2>
+
+				<form class="signupform">
+					<input type="text" name="name" placeholder="Name">
+					<input type="text" name="username" placeholder="Username/Email">
+					<input type="password" name="password" placeholder="Password">
+					<input type="password" name="confirmpassword" placeholder="Confirm Password">
+					<button type="submit" class="btnblack">Sign Up</button>
+				</form>
+
+				<p class="signuptxt">
+					Already have an account? <a href="login.html">Log In</a>
+				</p>
+
+			</div>
 	</div>
+
+</div>
 
 </body>
 </html>
