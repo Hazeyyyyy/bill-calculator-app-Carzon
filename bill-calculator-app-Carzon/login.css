@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.splitscreen {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leftside {
+  flex: 1;
+  background-color: #FFF8E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.leftside .logo {
+  width: 120px;
+  height: 120px;
+}
+
+.leftside .eBill {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+}
+
+.rightside {
+  flex: 1;
+  background-color: #84C4F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.loginform input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 7px;
+  border: 1px solid #CCC;
+  font-size: 16px;
+}
+
+.loginform input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.btnblack {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.btnblack:hover {
+  opacity: 0.8;
+}
+
+.forgot {
+  margin-top: 15px;
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+.split-screen {
+  flex-direction: column;
+}
+
+.leftside, .rightside {
+  flex: none;
+  width: 100%;
+  height: 50vh;
+}
+
+.container {
+  margin: 0 auto;
+}
+}

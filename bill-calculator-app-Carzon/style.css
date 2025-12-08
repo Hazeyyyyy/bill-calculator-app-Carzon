@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: #FFF8E5;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.bluetop {
+	position: absolute;
+	top: 20vh;
+	left: 0;
+	width: 100%;
+	height: 80vh;
+	background: #84C4F6;
+	border-top-left-radius: 80px;
+	border-top-right-radius: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	padding: 20px;
+	width: 100%;
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 100px;
+}
+
+.logo {
+	width: 80px;
+  height: 80px;
+} 
+
+.eBill {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: left;
+  }
+
+.tag {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 100px;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  }
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.btnwhite,
+.btnblack {
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 7px;
+	padding: 12px 20px;
+	cursor: pointer;
+	transition: 0.2s ease;
+
+}
+.btnblack {
+	background: black;
+	color: white;
+	border: none;
+}
+
+.btnblack:hover {
+	opacity: 0.8;
+}
+
+.btnwhite {
+	background: white;
+	color: black;
+	border: 2px solid black;
+}
+
+.btnwhite:hover {
+	background: #F0F0F0;
+}
